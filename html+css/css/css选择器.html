@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>CSS选择器</p>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>元素选择器</p>
+
+	<pre><code>
+div{
+	color:red;
+}
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>类选择器</p>
+	<pre><code>
+.div1{
+	color:red;
+}
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>id选择器</p>
+	<pre><code>
+#id{
+	color:red;
+}
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>并集选择器</p>
+	<pre><code>
+#id,div{
+	color:red
+}
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>交集选择器</p>
+	<pre><code>
+div.div1{
+	color:red
+}
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>通配符选择器</p>
+	<pre><code>
+*{
+	color:red;
+}
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>后代选择器</p>
+	<pre><code>
+div span{
+	color:red
+}
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>子元素选择器</p>
+	<pre><code>
+div > span{
+	color:red;
+}
+	</code></pre>
+
+	<p>子元素选择器特殊（有点类似伪类）</p>
+	<pre><code>
+**-child() 	=>	作用的子元素范围为全部子元素
+**-of-type() =>	作用的子元素范围为同类型元素
+
+nth-child(n){ } 	//n从1开始，可写为odd（奇数）even（偶数）
+nth-of-type(n){ }  //n从1开始 	*****
+first/last-child{ }
+first/last-of-type{ }
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>伪类选择器</p>
+	<pre><code>
+:link		:hover	:active	:visited
+:focus	
+
+::selection
+火狐有兼容性问题，需要使用::-moz-selection
+
+:first-letter	=>	元素的第一个字
+:first-line		=>	元素的第一行
+
+:before （A）/ :after（B）	=>	&lt;p&gt;A...B&lt;/p&gt;  
+
+:before与:after需要设置content属性，否则无法显示，默认为行内元素
+
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>属性选择器</p>
+	<pre><code>
+p[class="p1"] 	=>	class属性为p1的p元素
+
+p[class^="p1"] 	=>	class属性以p1开头的p元素
+p[class$="p1"] 	=>		   以p1结束
+p[class*="p1"] 	=>		   包含p1的
+
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>兄弟选择器</p>
+
+	<pre><code>
+A + B{} 	=>	选中A后紧邻的B元素（若A后紧邻的不是B，则未选中任何元素）
+
+A ~ B{} 	=>	选中A后所有的B元素（和A同级的B元素）
+	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>否定伪类选择器</p>
+
+	<pre><code>
+p:not(.hello){} 	=>	除了类为hello的p元素
+	</code></pre>
+</body>
+</html>
