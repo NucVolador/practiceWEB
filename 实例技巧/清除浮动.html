@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .parent{
+            border:10px solid red;
+        }
+        .child{
+            width:200px;
+            height:200px;
+            background-color:green;
+            /*浮动后脱离文档流*/
+            float:left;
+        }
+        .clearfix{
+            /*兼容ie6，在ie6中启动BFC*/
+            /*zoom为放大倍率，只在ie6中生效*/
+            zoom:1;
+        }
+        .clearfix:before,
+        .clearfix:after{
+            content:"";
+            /*table可以消除父子元素之间的外边距*/
+            display:table;
+            /*消除左右两侧影响最大的一侧*/
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <p>高度塌陷是由于子元素脱离文档流，导致父元素无法被撑起</p>
+    <div class="parent clearfix">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
