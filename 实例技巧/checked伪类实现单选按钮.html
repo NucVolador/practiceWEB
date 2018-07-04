@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        label{
+            position:relative;
+            /*浮动具有block特性*/
+            float:left;
+            margin:0 5px;
+            width:80px;
+            height:80px;
+            /*隐藏input*/
+            overflow:hidden;
+        }
+        input{
+            /*隐藏input*/
+            position:absolute;
+            top:-50px;
+            left:-50px;
+        }
+        span{
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            margin:auto;
+            border:1px solid;
+            border-radius:50%;
+        }
+        input[type="radio"]:checked + span{
+            background:red
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <label>
+            <input type="radio" name="dyr"/>
+            <span></span>
+        </label>
+        <label>
+            <input type="radio" name="dyr"/>
+            <span></span>
+        </label>
+        <label>
+            <input type="radio" name="dyr"/>
+            <span></span>
+        </label>
+    </form>
+</body>
+</html>
