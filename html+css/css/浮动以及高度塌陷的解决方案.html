@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1,#div2,#div3{
+            width:200px;
+            height:200px
+        }
+        #div1{
+            background-color:red;
+            float:left
+        }
+        #div2{
+            height:300px;
+            float:right;
+            background-color:yellow;
+        }
+        #div3{
+            clear:left;//div3位与div1下方
+            clear:right;//div3位与div2下方
+            clear:both;//both只是清除浮动影响最大的一侧的影响，此处div2对其影响大，故和right效果一致
+            background-color:skyblue;
+        }
+        /*高度塌陷是由于父元素未设置height，子元素浮动脱离文档流导致父元素变扁*/
+        .clearfix{
+            /*兼容ie6*/
+            zoom:1
+        }
+        .clearfix:after{
+            /*
+                :before是为了清除父子外边距传递问题，为了隔开父子元素
+            */
+            content:"";
+            display:block;
+            clear:both;
+        }
+        .border{
+            border:10px solid green;
+        }
+        .test{
+            width:200px;
+            height:200px;
+            background:red;
+            float:left;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+    <div class="border clearfix">
+        <div class="test "></div>
+    </div>
+
+</body>
+</html>

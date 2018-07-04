@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>首先css优先级按来源分</h2>
+    <p>
+        用户（个人引入）>创作者（开发者）>用户代理（浏览器）
+    </p>
+    <p>
+        读者重要声明>开发者重要声明>开发者普通声明>读者普通声明>用户代理声明(user agent style)
+    </p>
+    <h4 style="color:red">重要声明指加了!important，浏览器解析时会自动分为重要和非重要（选择器）两类css，即!important>选择器</h4>
+    <h2>其次按选择器优先级分</h2>
+    <p>
+        行内>id>class>元素>*>继承
+    </p>
+    <h4>包含多种选择器时优先级会相加，但不会超过数量级</h4>
+    <h2>最后按代码顺序，依照就近原则划分</h2>
+</body>
+</html>

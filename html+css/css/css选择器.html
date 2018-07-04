@@ -5,7 +5,22 @@
 	<title>Document</title>
 </head>
 <body>
+	<h1>css解析选择器时的顺序为从右向左</h1>
+	<pre><code>
+div ul li{}
+解析顺序为 li => ul => div ，这样可以提高解析效率
+	</code></pre>
 	<p>CSS选择器</p>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>通配符选择器</p>
+	<pre><code>
+*{
+	color:red;
+}
+	</code></pre>
 
 	<br/><br/>
 	<br/><br/>
@@ -61,16 +76,6 @@ div.div1{
 	<br/><br/>
 	<br/><br/>
 
-	<p>通配符选择器</p>
-	<pre><code>
-*{
-	color:red;
-}
-	</code></pre>
-
-	<br/><br/>
-	<br/><br/>
-
 	<p>后代选择器</p>
 	<pre><code>
 div span{
@@ -90,22 +95,40 @@ div > span{
 
 	<p>子元素选择器特殊（有点类似伪类）</p>
 	<pre><code>
-**-child() 	=>	作用的子元素范围为全部子元素
-**-of-type() =>	作用的子元素范围为同类型元素
 
-nth-child(n){ } 	//n从1开始，可写为odd（奇数）even（偶数）
-nth-of-type(n){ }  //n从1开始 	*****
-first/last-child{ }
-first/last-of-type{ }
 	</code></pre>
 
 	<br/><br/>
 	<br/><br/>
 
+	<h2>伪类和伪元素选择器选中的元素并不在dom树中</h2>
 	<p>伪类选择器</p>
 	<pre><code>
-:link		:hover	:active	:visited
-:focus	
+链接伪类
+:link :visited :target(css实现选项卡)
+
+:visitied只有以下属性生效：color/background-color/border-color
+
+动态伪类
+:hover	:active
+
+
+注：超链接绑定顺序 lvha(Love Hate)
+
+表单伪类
+:disabled	:enabled	:checked（自定义单选按钮）:focus
+
+结构性伪类
+**-child() 	=>	作用的子元素范围为全部子元素
+**-of-type() =>	作用的子元素范围为同类型元素
+
+nth-child(n){ } 	//n从1开始，可写为odd（奇数）even（偶数）,也可写为表达式：2n+1
+nth-of-type(n){ }  //n从1开始 	*****
+nth-last-child(n){ }
+nth-last-of-type(n){ }
+first/last-child{ }
+first/last-of-type{ }
+only-child{ } 		//只有一个子元素时才有效
 
 ::selection
 火狐有兼容性问题，需要使用::-moz-selection
@@ -113,11 +136,19 @@ first/last-of-type{ }
 :first-letter	=>	元素的第一个字
 :first-line		=>	元素的第一行
 
-:before （A）/ :after（B）	=>	&lt;p&gt;A...B&lt;/p&gt;  
-
-:before与:after需要设置content属性，否则无法显示，默认为行内元素
 
 	</code></pre>
+
+	<br/><br/>
+	<br/><br/>
+
+	<p>伪元素选择器</p>
+	<pre><code>
+:before （A）/ :after（B）	=>	&lt;p&gt;A...B&lt;/p&gt;
+
+:before与:after需要设置content属性，否则无法显示，默认为行内元素
+	</code></pre>
+
 
 	<br/><br/>
 	<br/><br/>
@@ -129,6 +160,21 @@ p[class="p1"] 	=>	class属性为p1的p元素
 p[class^="p1"] 	=>	class属性以p1开头的p元素
 p[class$="p1"] 	=>		   以p1结束
 p[class*="p1"] 	=>		   包含p1的
+
+~= 匹配含有val类的元素（以空格分割开的val）
+li[class~="val"]{
+	background:red;
+}
+
+*= 匹配含有val字母的元素
+li[class*="val"]{
+	background:red;
+}
+
+|= 匹配val 或 val- 的元素
+li[class|="val"]{
+	background:red;
+}
 
 	</code></pre>
 
