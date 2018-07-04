@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p{
+            text-align:center;
+        }
+        div{
+            width:200px;
+            height:200px;
+            margin:50px auto;
+            display:none;
+        }
+        div:nth-of-type(1){
+            background-color:yellow;
+        }
+        div:nth-of-type(2){
+            background-color:green;
+        }
+        div:nth-of-type(3){
+            background-color:red;
+        }
+        div:target{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="#div1">div1</a>
+        <a href="#div2">div2</a>
+        <a href="#div3">div3</a>
+    </p>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>
