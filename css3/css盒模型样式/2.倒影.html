@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width:100px;
+            height:100px;
+            position:absolute;
+            left:50%;
+            top:50%;
+            margin-top:-50px;
+            margin-left:-50px;
+        }
+        div:after{
+            content:"";
+            display:inline-block;
+            height:100%;
+            vertical-align:middle;
+        }
+        img{
+            vertical-align:middle;
+            /*
+                只支持在webkit内核下使用
+                    val1：方向 左left 右right 上below
+                    val2：与倒影间的距离
+                    val3：倒影的渐变程度
+            */
+            -webkit-box-reflect:below 10px linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,.9));
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../../images/zdy.jpg" width="200" alt="">
+    </div>
+</body>
+</html>
