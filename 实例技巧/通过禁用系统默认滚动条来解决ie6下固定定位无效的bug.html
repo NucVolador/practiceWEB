@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding:0}
+        /*隐藏默认滚动条，用绝对定位模拟固定定位*/
+        /*首屏大小就是初始包含块，绝对定位如果父元素没有已定位的元素，则会相对于初始包含块定位*/
+        html,body{height:100%;overflow:hidden;}
+        #wrap{height:100%;overflow:auto;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div style="height:3000px">
+            <div style="position:absolute;top:20px;left:20px;background:red;width:200px;height:200px"></div>
+        </div>
+    </div>
+</body>
+</html>
