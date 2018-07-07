@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*第一种*/
+        /*div{
+            width:200px;
+            height:200px;
+            position:absolute;
+            top:0;
+            bottom:0;
+            right:0;
+            left:0;
+            margin:auto;
+            background:pink;
+        }*/
+        /*第二种*/
+        /*div{
+            width:200px;
+            height:200px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-top:-100px;
+            margin-left:-100px;
+            background:red;
+        }*/
+        /*第三种，除img外，不建议使用第三种居中策略*/
+        html,body{height:100%;}
+        body:after{
+            content:"";
+            /*width:1px;*/
+            /*background:red;*/
+            height:100%;
+            display:inline-block;
+            vertical-align:middle;
+        }
+
+        div{
+            vertical-align:middle;
+            width:200px;
+            height:200px;
+            display:inline-block;
+            background:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>这是一个盒子</div>
+</body>
+</html>
