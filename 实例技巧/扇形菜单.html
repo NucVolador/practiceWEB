@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding:0;}
+        .container{
+            position:fixed;
+            right:10px;
+            bottom:20px;
+            width:49px;
+            height:49px;
+        }
+        .menu{
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            background-image:url("../images/home.png");
+            transition:1s ;
+        }
+        .item{
+            width:42px;
+            height:42px;
+            border-radius:50%;
+            background-repeat: no-repeat;
+            position:absolute;
+            margin:4px;
+            z-index: -1;
+            transition:1s ;
+            top:0;
+            right:0;
+        }
+        .item:nth-child(1){
+            background-image:url("../images/clos.png");
+        }
+        .item:nth-child(2){
+            background-image:url("../images/open.png");
+        }
+        .item:nth-child(3){
+            background-image:url("../images/full.png");
+        }
+        .item:nth-child(4){
+            background-image:url("../images/prev.png");
+        }
+        .item:nth-child(5){
+            background-image:url("../images/refresh.png");
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+        <div class="menu"></div>
+    </div>
+    <script>
+        var menu = document.querySelector('.menu');
+        var items = document.querySelectorAll('.item');
+        var flag = true;
+        menu.onclick = function(){
+            if(flag){
+                this.style.transform = 'rotate(720deg)';
+                    for(var i = 0;i<items.length;i++){
+                        items[i].style.transform = 'rotate(720deg) scale(1)';
+                        items[i].style.transition = ".5s "+i*0.1+"s";
+                        items[i].style.top = -getPoint(130,90*i/(items.length-1)).x + "px";
+                        items[i].style.right = getPoint(130,90*i/(items.length-1)).y + "px";
+                        items[i].onclick = function(){
+                            this.style.transition=".5s";
+                            this.style.transform=" rotate(720deg) scale(2)";
+                            this.style.opacity=0.2;
+                            this.addEventListener("transitionend",fn)
+                        }
+
+                }
+            }else {
+              this.style.transform = 'rotate(0deg)';
+              for(var i = 0;i<items.length;i++){
+                items[i].style.transition = ".5s "+i*0.1+"s";
+                items[i].style.transform = 'rotate(0deg) scale(1)'
+                items[i].style.top = "0px";
+                items[i].style.right = "0px";
+              }
+            }
+            flag = !flag;
+        }
+        function getPoint(r,deg){
+
+            var a = Math.round(r*Math.sin(deg*Math.PI/180))
+            var b = Math.round(r*Math.cos(deg*Math.PI/180))
+            console.log(Math.sin(deg*Math.PI/180),deg)
+            return {x:a,y:b};
+        }
+        function fn(){
+            this.style.transition=".1s ";
+            this.style.transform="rotate(720deg) scale(1) ";
+            this.style.opacity=1;
+            this.removeEventListener('transitionend',fn)
+        }
+    </script>
+</body>
+</html>
