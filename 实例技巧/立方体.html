@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    *{margin:0;padding:0}
+    html,body{height:100%;overflow:hidden}
+    #wrap{height:100%;overflow:auto;
+        perspective: 5300px;
+    }
+    .box{
+        position:relative;
+
+        width:100px;
+        height:100px;
+        margin:100px auto;
+        /*border:1px red solid;*/
+        transition:2s;
+        transform-style: preserve-3d;
+        transform-origin: center center -50px;
+    }
+    .item{
+        /*background-color:rgba(255,192,203,.5);*/
+        position:absolute;
+        width:100px;
+        height:100px;
+        text-align: center;
+        font-size:30px;
+        line-height:100px;
+        color:rgb(0,0,0);
+        /*backface-visibility: hidden;*/
+    }
+    .item:nth-child(2){
+        transform:translateZ(-100px);
+    }
+    .item:nth-child(3){
+        left: -100px;
+        transform-origin:right;
+        transform:rotateY(-90deg);
+    }
+    .item:nth-child(4){
+        right:-100px;
+        transform:rotateY(90deg);
+        transform-origin:left;
+    }
+    .item:nth-child(5){
+        top:-100px;
+        transform:rotateX(90deg);
+        transform-origin:bottom;
+    }
+    .item:nth-child(6){
+        bottom:-100px;
+        transform:rotateX(-90deg);
+        transform-origin:top;
+    }
+    #wrap:hover .box{
+        transform:rotateX(360deg)
+    }
+</style>
+<body>
+    <div id="wrap">
+        <div class="box">
+            <div class="item">前</div>
+            <div class="item">后</div>
+            <div class="item">左</div>
+            <div class="item">右</div>
+            <div class="item">上</div>
+            <div class="item">下</div>
+        </div>
+    </div>
+</body>
+</html>
+
