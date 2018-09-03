@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="#" id="form" style="position:absolute;z-index:-1;filter:alpha(opacity=0);opacity:0 ">
+		<h1></h1>
+		<table id="PrintA" width="100%" border="1" cellspacing="0" cellpadding="0">
+			<tr style="text-align:center;">
+				<td>单元格1</td>
+				<td>单元格2</td>
+				<td>单元格3</td>
+				<td>单元格4</td>
+			</tr>
+			<tr>
+				<td colspan="4" style="text-align:center;">
+					<font color="red" face="Verdana">单元格合并</font>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<table id="Test" width="100%">
+			<tr>
+				<td>test</td>
+			</tr>
+		</table>
+	</form>	
+	<div id="layer">
+		<input type="button" onclick="javascript:MakeWord();" value="导出页面到word">
+	</div>
+	<br><br>
+	<br><br>
+	<br><br>
+	<br><br>
+	<p>sadfsdfsdfsdf</p>
+	<script>
+		function MakeWord(){
+			var word = new ActiveXObject("Word.Application");
+			// var doc = word .documents.open("c:/test.doc");     //此处为打开已有的模版
+
+			var doc = word.Documents.Add("",0,1);//不打开模版直接加入内容
+
+			var Range = doc.Range();
+
+			var sel = document.body.createTextRange();
+
+			sel.moveToElementText(form);//此处的form为页面表单的id
+
+			sel.select();
+
+			sel.execCommand("Copy");
+
+			Range.Paste();
+
+			word.Application.Visible = true;
+
+			//word.Application.Selection.InlineShapes.AddPicture("c://m20.gif");
+
+			//doc.saveAs("c://ba.doc");//存放到指定的位置注意路径一定要是“//”不然会报错
+		}
+	</script>
+</body>
+</html>

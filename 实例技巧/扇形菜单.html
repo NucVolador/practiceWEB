@@ -71,35 +71,41 @@
                         items[i].style.transition = ".5s "+i*0.1+"s";
                         items[i].style.top = -getPoint(130,90*i/(items.length-1)).x + "px";
                         items[i].style.right = getPoint(130,90*i/(items.length-1)).y + "px";
-                        items[i].onclick = function(){
-                            this.style.transition=".5s";
-                            this.style.transform=" rotate(720deg) scale(2)";
-                            this.style.opacity=0.2;
-                            this.addEventListener("transitionend",fn)
-                        }
+
 
                 }
             }else {
-              this.style.transform = 'rotate(0deg)';
-              for(var i = 0;i<items.length;i++){
-                items[i].style.transition = ".5s "+i*0.1+"s";
-                items[i].style.transform = 'rotate(0deg) scale(1)'
-                items[i].style.top = "0px";
-                items[i].style.right = "0px";
-              }
+                this.style.transform = 'rotate(0deg)';
+                for(var i = 0;i<items.length;i++){
+                    //因为点击子元素会修改子元素的过渡属性，因此需要重新设置
+                    items[i].style.transition = ".5s "+i*0.1+"s";
+                    items[i].style.transform = 'rotate(0deg) scale(1)'
+                    items[i].style.top = "0px";
+                    items[i].style.right = "0px";
+                }
             }
             flag = !flag;
         }
+        //获取点的位置，r为半径，deg为角度，
         function getPoint(r,deg){
-
-            var a = Math.round(r*Math.sin(deg*Math.PI/180))
-            var b = Math.round(r*Math.cos(deg*Math.PI/180))
-            console.log(Math.sin(deg*Math.PI/180),deg)
+            // var a = Math.round(r*Math.sin(deg*Math.PI/180))
+            // var b = Math.round(r*Math.cos(deg*Math.PI/180))
+            var a = Math.round(r*Math.sin(deg*180/Math.PI))
+            var b = Math.round(r*Math.cos(deg*180/Math.PI))
+            console.log(a,b)
             return {x:a,y:b};
+        }
+        for(var i =0;i<items.length;i++){
+            items[i].onclick = function(){
+                this.style.transition=".5s";
+                this.style.transform=" rotate(720deg) scale(2)";
+                this.style.opacity=0.2;
+                this.addEventListener("transitionend",fn)
+            }
         }
         function fn(){
             this.style.transition=".1s ";
-            this.style.transform="rotate(720deg) scale(1) ";
+            this.style.transform="rotate(720deg) scale(1)";
             this.style.opacity=1;
             this.removeEventListener('transitionend',fn)
         }

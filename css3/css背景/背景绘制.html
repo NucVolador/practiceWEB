@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width:300px;
+            height:400px;
+            padding:100px;
+            position:absolute;
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            margin:auto;
+            border:100px solid rgba(0,0,0,.5) ;
+            background:url("../../images/zdy.jpg") no-repeat;
+            /*定义背景开始绘制的区域
+                默认为padding-box
+                    border-box  content-box
+                */
+            background-origin: padding-box;
+            /*背景开始裁剪的区域
+                默认值border-box
+                    padding-box content-box
+            */
+            background-clip:border-box;
+            /*背景图片大小
+                百分比
+                像素
+                cover以宽或高某个比例较大的值来覆盖盒子
+                contain以宽或高某个较小的值来覆盖盒子
+                    cover和contain都会保证宽或高其中的一个全部处于盒子中
+                auto以背景原大小显示
+            */
+            background-size:100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div>test</div>
+</body>
+</html>
