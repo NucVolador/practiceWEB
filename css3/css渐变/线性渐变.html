@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            margin:50px auto;
+            /*
+                90deg指旋转的角度，
+                yellow 10px 起始的10px都是黄色
+                green 30px  10px-30px之间是黄色渐变到绿色
+                repeating   平铺渐变部分，也就是10px-30px之间
+
+            */
+            background-image:repeating-linear-gradient(90deg,yellow 10px,green 30px);
+        }
+    </style>
 </head>
 <body>
-$END$
+    <div></div>
 </body>
 </html>

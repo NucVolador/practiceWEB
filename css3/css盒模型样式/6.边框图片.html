@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            margin:50px auto;
+            background:pink;
+            border:1px solid;
+            border-image-source:url("../../images/border-image.png");
+            /*指定背景大小*/
+            border-image-width:20px;
+            /*把图片切成9宫格，
+                按照上右下左四个方向从外向内切割，
+                切割的大小按照指定的比例，fill表示把中间裁剪剩余部分充当背景*/
+            border-image-slice:33.333%  ;
+            /*平铺方式  round堆叠铺满，repeat两边分散半块，stretch不平铺，单张铺满（默认值）*/
+            border-image-repeat:repeat;
+            /*控制图片与box的距离*/
+            border-image-outset:0;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <div></div>
 </body>
 </html>

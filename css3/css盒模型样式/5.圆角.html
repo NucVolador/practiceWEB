@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            margin:30px;
+        }
+        div:nth-child(1){
+            background-color:skyblue;
+            border-radius:50%;
+        }
+        div:nth-child(2){
+            border-radius:50% 0;
+            background-color:deeppink;
+        }
+        div:nth-child(3){
+            height:200px;
+            width:400px;
+            border-radius: 200px/100px;
+            background-color:green;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <div></div>
+    <div></div>
+    <div></div>
 </body>
 </html>

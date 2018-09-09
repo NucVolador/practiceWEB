@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            margin:50px auto;
+            /*
+                60px 60px 圆心
+                circle  发散形状，默认为椭圆（ellipse）
+                farthest-side   半径长度的标准（）
+                    farthest-side 圆心到最远的边的距离
+                    closest-side  圆心到最近的边的距离
+                    farthest-corner 圆心到最远角的距离
+                    closest-corner  圆心到最近角的距离
+            */
+            background-image:radial-gradient(farthest-side circle at 60px 60px,yellow 10%,green );
+        }
+    </style>
 </head>
 <body>
-$END$
+    <div></div>
 </body>
 </html>

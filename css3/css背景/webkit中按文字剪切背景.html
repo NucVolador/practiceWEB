@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <style>
+        body{background:black}
+        h1{
+            text-align:center;
+            font-size:80px;
+            margin-top:50px;
+            color:rgba(255,255,255,.3);
+            background-image:linear-gradient(90deg ,rgb(0,0,0) 100px,rgba(255,255,255,1) 180px, rgba(0,0,0) 260px);
+            background-position: -50px 0;
+            /*background-repeat:no-repeat;*/
+            -webkit-background-clip:text;
+            /*transition:1s;*/
+        }
+        /*h1:hover{*/
+            /*background-position:500px;*/
+        /*}*/
+    </style>
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <h1>atguigu尚硅谷</h1>
+    <script>
+        var h1 = document.querySelector("h1");
+        var timer = "";
+        h1.onmouseover = function(){
+            var flag = -50;
+            timer = setInterval(()=>{
+                flag+=15;
+                if(flag>700){
+                    flag = -50
+                }
+                this.style.backgroundPosition = flag + "px";
+            },30)
+        }
+        h1.onmouseout = function(){
+            clearInterval(timer);
+            this.style.backgroundPosition = -50 + "px";
+        }
+    </script>
 </body>
 </html>

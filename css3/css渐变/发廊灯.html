@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        .wrap{
+            width:50px;
+            height:200px;
+            border:3px solid;
+            margin:50px auto;
+            overflow:hidden;
+        }
+        .wrap div{
+            width:50px;
+            height:300px;
+            background-image:repeating-linear-gradient(150deg,white,white 10px,black 10px,black 20px);
+        }
+    </style>
 </head>
 <body>
-$END$
+        <div class="wrap">
+            <div></div>
+        </div>
+        <script>
+            var div = document.querySelector(".wrap > div");
+            var flag = 0;
+            setInterval(function(){
+                flag+= 1;
+                if(flag > 93){
+                    flag = 0;
+                }
+                div.style.marginTop = -flag + "px";
+            },10)
+        </script>
 </body>
 </html>

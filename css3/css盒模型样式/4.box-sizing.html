@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            padding:30px;
+            border:10px solid;
+        }
+        div:nth-child(1){
+            /*默认值*/
+            box-sizing:content-box;
+            background-color:deeppink;
+        }
+        div:nth-child(2){
+            /*border和padding均在content范围内*/
+            box-sizing:border-box;
+            background-color:skyblue;
+        }
+    </style>
 </head>
 <body>
-$END$
+        <div>div1</div>
+        <div>div2</div>
 </body>
 </html>
