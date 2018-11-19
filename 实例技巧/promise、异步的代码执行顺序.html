@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//C E cao aa A B D
+		//promise对象实例的过程与一般的代码逻辑一致，
+		//then为回调的过程，是在当前代码执行完毕之后才执行（回调仍算作主线程中）
+		//异步操作被放入异步队列，在主线程中任务执行完毕之后依次取出执行
+		setTimeout(()=>{
+          	console.log("A")
+		},0);
+
+		var obj = {
+			func : function(){
+				setTimeout(function(){
+					console.log('B')
+				},0);
+				
+				return new Promise(function(res){
+					console.log('C');
+					res()
+				})
+			}
+		}
+
+		obj.func().then(function(){
+			console.log("cao")
+			setTimeout(()=>{
+
+			console.log('D');
+			})
+		}).then(()=>{
+			console.log("aa");
+		})
+		console.log('E')
+	</script>
+</body>
+</html>
