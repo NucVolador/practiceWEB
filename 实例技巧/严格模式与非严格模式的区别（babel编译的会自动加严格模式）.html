@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*标准模式与混杂模式说的是DTD*/
+		/*严格模式与非严格模式说的是函数内的this*/
+		/*babel编译后的文件都会加上严格模式，从而导致this指向发生变化*/
+		(function(){
+			'use strict'
+			console.log('strict',this)
+		})();
+		(function(){
+			console.log(this);
+		})();
+	</script>
+</body>
+</html>
