@@ -1,0 +1,105 @@
+﻿设置git账户
+
+git config --global user.name "Your Name"
+
+git config --global user.email "email@example.com"
+
+
+获取ssh公钥
+
+ssh-keygen -t rsa -C "远程库的账户名" 
+然后三次回车
+然后把C:\Users\用户名\.ssh\id_rsa.pub中的内容复制到ssh公钥当中
+（复制生成后的 ssh key，通过项目主页 「管理」->「部署公钥管理」
+->「添加部署公钥」 ，添加生成的 public key 添加到项目中。）
+
+git init			=>	初始化创建git版本库
+	
+git add fileName	=>	把文件添加至暂存区
+
+git commit -m ""	=>	把暂存区中的“修改”提交到git仓库
+
+git log				=>	查看git提交的各个版本
+
+git status			=>	查看当前工作区，暂存区内的文件改变
+
+git checkout -- fileName	=>	丢弃工作区的修改（回退到最近一次的git commit或git add后的状态）
+注意：一定要有 -- ，否则是触发切换分支
+
+git reset HEAD flieName		=>	丢弃暂存区的修改
+
+git rm fileName 	=>	删除版本库中的文件
+
+git checkout -- fileName	=>	将版本库中的文件替换到工作区	
+
+git branch			=>	查看分支
+
+git branch name		=>	创建某个分支
+
+git checkout name 	=>	切换至某个分支
+
+git checkout -b name=>	创建并切换到该分支
+
+git merge name 		=>	合并到当前分支（把其他分支合并到当前git branch选择的分支）
+
+git branch -d <name>=>	删除分支
+
+git push origin 分支名 =>	将分支的本地代码提交到远程库上
+
+git rebase			=>	将当前分支的多次历史commit合并到一次中，然后与其他分支进行合并，使git log
+						显示为直线合并（不进行rebase会保存历史commit，与其他分支合并后会显示为曲线），
+						就好似直接在其他分支进行的开发（commit）一样
+
+git pull 			=>	加载自己本地分支对应的远程库分支中最新的代码
+
+git pull失败是因为自己本地的分支未与远程库的分支对应，
+例如：
+	本地现在的分支为dev，想对应远程库origin下的dev,可以进行如下设置
+	git branch --set-upstream-to=origin/dev dev
+
+
+
+！！！紧急bug修复或中途有事时！！！
+
+git stash		=>	当前为执行add或commit不得不切换分支工作时，用此命令可以保存现场
+
+git stash list		=>	查看工作现场列表
+git stash apply(一条)或git stash apply stash@{0}(多条)		=>	恢复工作现场，不删除stash内容
+git stash pop		=>	恢复工作现场，删除stash内容
+
+通常在本人所在分支上修改bug时使用，流程为：
+dev分支上 进行stash保存  => 切换到bug所在分支 master => 在此分支上创建专门解决bug的分支 issue
+=> 修复后add commit => 切换回bug所在分支 master => merge合并并删除掉 issue 
+=> 切换到原 dev 分支 => git stash list查看状态列表 => git stash apply 或 git stash pop 恢复
+
+参照原文
+https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137602359178794d966923e5c4134bc8bf98dfb03aea3000
+
+
+！！！开发新功能时！！！
+
+每添加一个新功能，最好新建一个feature分支，在上面开发，完成后，合并，最后，删除该feature分支。
+
+未merge前想删除分支，只能 -D 强行删除
+
+
+
+
+多人协作的工作模式通常是这样：
+
+首先，可以试图用git push origin <branch-name>推送自己的修改；
+
+如果推送失败，则因为远程分支比你的本地更新，需要先用git pull试图合并；
+
+如果合并有冲突，则解决冲突，并在本地提交；
+
+没有冲突或者解决掉冲突后，再用git push origin <branch-name>推送就能成功！
+
+如果git pull提示no tracking information，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream-to <branch-name> origin/<branch-name>。
+
+这就是多人协作的工作模式，一旦熟悉了，就非常简单。
+
+参考文档：
+廖雪峰的官方网站：https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+码云帮助文档：https://gitee.com/help
+git rebase帮助文档：http://gitbook.liuhui998.com/4_2.html

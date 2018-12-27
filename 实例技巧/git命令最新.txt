@@ -1,0 +1,37 @@
+回溯/前进到指定版本
+git reset --hard 版本号/HEAD~版本
+
+把暂存区的修改回退到工作区（并不会把暂存区的拿出来覆盖工作区，实际功能相当于清空暂存区，与版本库同步）
+git reset HEAD filename
+
+查看工作区与版本库（最新版）不同
+git diff HEAD -- filename
+
+查看暂存区与版本库的区别
+git diff --cached
+
+丢弃工作区文件的修改
+git checkout -- filename
+
+git rm filename =》 无法通过 git checkout恢复
+
+手动删除的可以通过git checkout -- filename恢复
+
+查看log参数
+git log --graph --pretty=oneline --abbrev-commit
+
+合并分支分两种方式：
+①快速合并 =》 在log图中看不出来做过合并，
+②普通模式合并 =》 在git merge branchname 加上 --no-ff以及-m "提示信息"
+
+
+在dev分支基础上，新建分支dev_next，在dev_next上新建了文件，但没有commit，此时dev上发现bug需要修改。该怎么办？
+
+先执行
+git stash保存
+
+切分支fix bug
+
+fix完成后，切到目标分支，如果两个分支有关系，进行merge，
+
+然后执行git stash apply stash@{0}，报出需修复冲突，
