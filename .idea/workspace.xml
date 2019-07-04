@@ -2,89 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2425191-fe1f-4e32-9f5f-403ac7b0592d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/practiceWEB.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css3/css渐变/发廊灯.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css3/css渐变/竞相渐变.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css3/css渐变/线性渐变.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css3/css盒模型样式/4.box-sizing.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css3/css盒模型样式/5.圆角.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css3/css盒模型样式/6.边框图片.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css3/css背景/webkit中按文字剪切背景.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css3/css背景/背景绘制.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/border-image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/实例技巧/checked伪类实现单选按钮.html" beforeDir="false" afterPath="$PROJECT_DIR$/实例技巧/checked伪类实现单选按钮.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/实例技巧/扇形菜单.html" beforeDir="false" afterPath="$PROJECT_DIR$/实例技巧/扇形菜单.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/实例技巧/book/3.7函数.md" beforeDir="false" afterPath="$PROJECT_DIR$/实例技巧/book/3.7函数.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/实例技巧/book/note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/实例技巧/book/note.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="立方体.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/实例技巧/立方体.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="28">
-                  <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="12_隐藏背面的立方体.html" pinned="false" current-in-tab="false">
-            <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/12_隐藏背面的立方体.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1288">
-                  <caret line="46" column="13" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="44" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="11_立方体.html" pinned="false" current-in-tab="false">
-            <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/11_立方体.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="504">
-                  <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="10_立方体.html" pinned="false" current-in-tab="true">
-            <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/10_立方体.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="28">
-                  <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="13_隐藏背面.html" pinned="false" current-in-tab="false">
-            <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/13_隐藏背面.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1008">
-                  <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/实例技巧/book/3.7函数.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="490">
+                <caret line="116" selection-start-line="116" selection-end-line="116" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,22 +95,14 @@
         <option value="J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/12_隐藏背面的立方体.html" />
         <option value="J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/10_立方体.html" />
         <option value="$PROJECT_DIR$/实例技巧/立方体.html" />
+        <option value="$PROJECT_DIR$/实例技巧/book/3.7函数.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1000" />
-    <option name="width" value="928" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -173,11 +119,6 @@
               <item name="practiceWEB" type="b2602c69:ProjectViewProjectNode" />
               <item name="practiceWEB" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="practiceWEB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practiceWEB" type="462c0819:PsiDirectoryNode" />
-              <item name="实例技巧" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -187,6 +128,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -240,6 +182,8 @@
       <workItem from="1531725718937" duration="889000" />
       <workItem from="1531749477482" duration="93000" />
       <workItem from="1531756574318" duration="81000" />
+      <workItem from="1562249872567" duration="313000" />
+      <workItem from="1562252546993" duration="41000" />
     </task>
     <task id="LOCAL-00001" summary="ie6中png24格式图片不透明bug">
       <created>1530699036288</created>
@@ -329,36 +273,34 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71253000" />
+    <option name="totallyTimeSpent" value="71607000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19154558" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32763532" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32952926" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3266762" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19107896" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3265306" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.32763532" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32952926" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32872927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32872927" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ie6中png24格式图片不透明bug" />
@@ -376,20 +318,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="立方体" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/html+css/css/浮动以及高度塌陷的解决方案.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html+css/html/表单下拉框子列表.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html+css/css/cssHack.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
@@ -403,13 +331,7 @@
     <entry file="file://$PROJECT_DIR$/html+css/js/DD_belatedPNG_0.0.8a-min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://J:/offer/尚硅谷HTML+CSS视频/源码、课件/源码/source_08/day08/08.图片.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="42" column="12" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://J:/offer/尚硅谷HTML+CSS视频/源码、课件/源码/source_08/day08/08.图片.html" />
     <entry file="file://$PROJECT_DIR$/实例技巧/ie6中png24不支持透明的BUG.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -431,13 +353,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/01_选择器/03_伪类与伪元素选择器/03_表单相关伪类/04_模拟单选框.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/01_选择器/03_伪类与伪元素选择器/03_表单相关伪类/04_模拟单选框.html" />
     <entry file="file://$PROJECT_DIR$/实例技巧/清除浮动.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -466,13 +382,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css3/css文本样式/4.text-overflow实现文字溢出省略.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css3/css文本样式/4.text-overflow实现文字溢出省略.html" />
     <entry file="file://$PROJECT_DIR$/css3/css文本样式/5.文字排版.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -487,24 +397,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/work/day02/02_新增UI方案/01_文本新增样式/06_文字模糊.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://J:/offer/尚硅谷-css3/code/work/day02/02_新增UI方案/01_文本新增样式/06_文字模糊.html" />
     <entry file="file://$PROJECT_DIR$/images/taobaoLogo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/images/u=767107460,2213899809&amp;fm=179&amp;app=42&amp;f=JPEG.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/work/day02/02_新增UI方案/01_文本新增样式/07_模糊背景.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24" />
-      </provider>
-    </entry>
+    <entry file="file://J:/offer/尚硅谷-css3/code/work/day02/02_新增UI方案/01_文本新增样式/07_模糊背景.html" />
     <entry file="file://$PROJECT_DIR$/实例技巧/浮雕文字+文字模糊+模糊背景图.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
@@ -519,13 +419,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/03_新的UI方案/02_盒模型新增属性/04_倒影.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/03_新的UI方案/02_盒模型新增属性/04_倒影.html" />
     <entry file="file://$PROJECT_DIR$/css3/css盒模型样式/2.倒影.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
@@ -533,13 +427,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/03_新的UI方案/02_盒模型新增属性/06_倒影.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/03_新的UI方案/02_盒模型新增属性/06_倒影.html" />
     <entry file="file://$PROJECT_DIR$/实例技巧/checked伪类实现单选按钮.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-54">
@@ -595,20 +483,8 @@
     <entry file="file://$PROJECT_DIR$/images/avatar.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/03_新的UI方案/03_ 新增UI样式/04_渐变/01_线性渐变/09_光斑动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/work/day02/02_新增UI方案/03_新增UI样式/12_渐变/05_光斑动画.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="24" column="96" selection-start-line="24" selection-start-column="96" selection-end-line="24" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/03_新的UI方案/03_ 新增UI样式/04_渐变/01_线性渐变/09_光斑动画.html" />
+    <entry file="file://J:/offer/尚硅谷-css3/code/work/day02/02_新增UI方案/03_新增UI样式/12_渐变/05_光斑动画.html" />
     <entry file="file://$PROJECT_DIR$/css3/css背景/背景绘制.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -645,20 +521,8 @@
       </provider>
     </entry>
     <entry file="file://F:/aa/artwork/test.js" />
-    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/2d变形（变换）/15_扇形导航/扇形导航.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1932">
-          <caret line="81" column="14" lean-forward="true" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://J:/编程题/1数组中重复的数字/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/2d变形（变换）/15_扇形导航/扇形导航.html" />
+    <entry file="file://J:/编程题/1数组中重复的数字/index.js" />
     <entry file="file://$PROJECT_DIR$/实例技巧/扇形菜单.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -666,38 +530,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/13_隐藏背面.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/12_隐藏背面的立方体.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="46" column="13" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/11_立方体.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/10_立方体.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/13_隐藏背面.html" />
+    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/12_隐藏背面的立方体.html" />
+    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/11_立方体.html" />
+    <entry file="file://J:/offer/尚硅谷-css3/code/pre/01_css3/05_变形/3d变形（变换）/10_立方体.html" />
     <entry file="file://$PROJECT_DIR$/实例技巧/立方体.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        <state relative-caret-position="118">
+          <caret line="37" column="23" lean-forward="true" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/实例技巧/book/3.7函数.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="490">
+            <caret line="116" selection-start-line="116" selection-end-line="116" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
